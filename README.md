@@ -3,12 +3,6 @@
 
 #The following is Python code from a project I started on January 8, 2018 using mainly the pandas library:
 
-
-Created on Mon Jan  8 00:27:13 2018
-
-@author: Owner
-"""
-
 import pandas as pd
 import statsmodels.api as sm
 import pylab as pl

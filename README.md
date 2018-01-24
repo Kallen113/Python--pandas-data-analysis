@@ -1,7 +1,7 @@
 # Python--pandas-data-analysis
 '''Python code for: Importing Excel data, rename variables, melt columns, and run plots'''
 
-#The following is Python code from a project I started on January 8, 2018:
+#The following is Python code from a project I started on January 8, 2018 using mainly the pandas library:
 
 
 Created on Mon Jan  8 00:27:13 2018
@@ -74,6 +74,7 @@ df_reg.columns
 '''The following code implements various plots:'''
 
 df_reg.hist(column= "GDP_percap", bins=50)
+
 '''Implements a histogram of the GDP_percap variable.
 #Notice the data are heavily skewed to the right, meaning the mean is likely
 much higher than the median. 
@@ -87,6 +88,7 @@ df_reg.plot.bar()
 #Implments a bar chart.
 
 df_reg.plot.box()
+
 '''Implements a box plot. Similar to the histogram, notice how the
 data are heavily skewed, and most of the distribution lies
 within the lower to mid income countries. The higher-income countries
@@ -94,6 +96,7 @@ are far above the global average of GDP per capita.'''
 
 
 df_reg.plot("Year","GDP_percap")
+
 '''Implements a plot comparing GDP per-capita over time, from
 1995 to 2015 (i.e., the full duration of the data).
 Notice there is a sloid increasing trend in GDP per-capita
